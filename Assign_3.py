@@ -22,7 +22,7 @@ def main():
 
         percent = (classes_attend/classes_held)*100
 
-        # Process of True of False
+        # Percent is hight than 75
         if percent >= 75:
             print(Fore.CYAN + "You can take the final exam")
 
@@ -33,12 +33,12 @@ def main():
             print("")
 
     except Exception:
+        # user did not enter a number
         print(Fore.MAGENTA + "Please enter your number of classes")
         print(Fore.MAGENTA + "you have attended and held classes")
 
     finally:
         print(Fore.YELLOW + "Thank you!")
-        
 
 
 if __name__ == "__main__":
